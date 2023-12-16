@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+
+body {
+            font-family: serif;
+            margin: 0;
+            padding: 0;
+            background-color: #795548;
+            margin: 20px auto;
+            border-radius: 3px;
+            position: relative;       
+            color: #594639;
+        }
+        
+    html {
+        scroll-behavior: smooth;
+    }
+
+/* 横並び */
+
+.flex {
+    display: flex; /*横並び*/
+  }
+  .flex .image {
+    width: 800px; /*画像サイズ指定*/
+    margin: 0;
+    padding: 0;
+  }
+  .flex .image img {
+    width: 100%;
+    height: auto;
+  }
+  .flex .right {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+  .flex .title {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .flex .text {
+    margin: 10px 0 0;
+    padding: 0;
+  }
+  
+  body {
+    padding: 0;
+  }
+
+
+        header {
+            background-image: url("https://t4.ftcdn.net/jpg/00/38/28/17/360_F_38281769_EdTrgRy4msU2jBNNEf6ipOURG1ecjUXo.jpg");
+            color: #fff;
+            text-align: left;
+            padding: 8em;
+
+        }
+
+        span{
+            text-align: right;
+        }
+
+        nav {
+            background-color: #4e342e;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        main {
+            background-color: #f5deb3;
+                padding: 30px 30px 30px;
+                max-width: 1000px;
+                margin: 20px auto;
+                border-radius: 3px;
+                position: relative;
+                font-family: serif;
+                opacity: .9;
+        }
+
+        iframe{
+          display: flex;
+          width: 800px; /*画像サイズ指定*/
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+
+        }
+
+        section {
+            padding: 5em;
+            text-align: center;
+        }
+
+        
+
+        footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-image: url("https://t4.ftcdn.net/jpg/00/38/28/17/360_F_38281769_EdTrgRy4msU2jBNNEf6ipOURG1ecjUXo.jpg");
+            color: #fff;
+            text-align: center;
+            padding: 0.75em;
+            
+        }
+
+        
+
+        
+
+
+        a {color:#8b4513;text-decoration:underline;
+        }
+
+        .ruled-line {
+             width: 80%;
+             max-width: 700px;
+             margin: 0 auto;
+             font-size: 15px;
+             line-height: 2.3;
+             background-image: linear-gradient(180deg, #795548 1px, transparent 1px);
+             background-size: 100% 2.3em;
+             background-position: bottom 1px center;
+            }
+
+        #cookieButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f5deb3; 
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.2em;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        #cookieButton:hover {
+            background-color: #deb887; 
+        }
