@@ -1,0 +1,71 @@
+html {
+  background-color: #fffaf0;
+}
+
+body{
+  color: #deb887;
+  background-color: #fff;
+  padding: 30px 30px 30px;
+  max-width: 1000px;
+  margin: 20px auto;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 3px;
+  position: relative;
+  font-family: serif;
+}
+
+
+.circle3 {
+display: flex;
+align-items: center;
+justify-content: center;
+background: #b0c4de;
+border-radius: 50%;
+width: 500px;
+height: 500px;
+color: #fff;
+font-size: 20px;
+}
+
+.box1 {
+border:#ec59ba 3px double; /*境界線の指定*/
+padding:10px;
+}
+.caption_box{
+position: relative;
+
+margin-top: 1em;
+padding: 1em 2em;
+border: 1px solid black;
+}
+
+.caption_box .caption{
+position: absolute;
+top: 0;
+left: 0;
+
+font-size: 1em;
+padding: 0 1em;
+margin: 0;
+background-color: black;
+transform: translateY(-50%) translateX(1em);
+}
+
+a {color:#b0c4de;text-decoration:underline;
+}
+
+
+
+.ruled-line {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 2.3;
+  background-image: linear-gradient(180deg, #ddd 1px, transparent 1px);
+  background-size: 100% 2.3em;
+  background-position: bottom 1px center;
+}
+
+
+
