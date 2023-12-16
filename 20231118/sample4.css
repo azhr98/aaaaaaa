@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+  }
+
+table {width: auto;
+
+}
+
+  .pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #fff;
+    border: solid 2px #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    transform: translateY(20%) rotate(-45deg);
+  }
+
+  a {color:#8b4513;text-decoration:underline;
+  }
+
+body {
+  background-image: url("https://thumb.ac-illust.com/aa/aac5f9f3d9b292b49634cadfeb0b3ac5_t.jpeg");
+    padding: 30px 30px 30px;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 3px;
+    position: relative;
+    font-family: TsukuARdGothic-Regular;
+    }
+    
+    .ruled-line {
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 15px;
+      line-height: 2.3;
+      background-image: linear-gradient(180deg, #ddd 1px, transparent 1px);
+      background-size: 100% 2.3em;
+      background-position: bottom 1px center;
+    }
+    
+    .container {
+      padding: 1%;
+    }
+  
+    .footer {
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      background: #eee;
+    }
+
+    .content {
+        padding: 20px 0;
+      }
+      
+    main {
+        justify-content: center;
+        align-items: center;
+        max-width: 1040px;
+        background-color:#fff;
+        opacity: .9;
+        padding: 2rem;
+        }
+
+      <!--ついてくるヘッダー--!>
+
+      .header-box {
+        height: 80px;
+      }
+      
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, .8);
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+
+      .logo {
+        width: 30%;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 20px;
+        font-weight: 600;
+        background: #a0522d;
+      }
+      
+      nav {
+        width: 60%;
+      }
+      
+      ul {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      li {
+        width: 100%;
+      }
+      
+      a {
+        display: block;
+        width: 100%;
+        line-height: 80px;
+      }
+      
+      .mobile-menu {
+        display: none;
+        width: 30px;
+        height: 22px;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+      
+      .line {
+        background-color: white;
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        transition: all 0.8s;
+      }
+      
+      .line:nth-of-type(1) {
+        top: 0;
+      }
+      
+      .line:nth-of-type(2) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+      .line:nth-of-type(3) {
+        bottom: 0;
+      }
+      
+      /* モバイル用表示切り替え */
+      @media (max-width: 800px) {
+        .mobile-menu {
+          display: block;
+        }
+      
+        .pc-menu {
+          display: none;
+        }
+      }
+      
+    
