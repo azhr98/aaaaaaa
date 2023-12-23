@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+html {
+	Max-width: 100%;
+  }
+
+body {
+	font-family: serif;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #4d0000;
+}
+
+main {
+	padding: 15px 40px 15px 40px; 
+	margin: 100px;
+
+}
+
+ /* カーソルを合わせたときに表示を変える */
+ p.hover-sample:hover{
+	color: green;
+}
+
+/* ↓無効になってる（１１２行目） */
+a {color:#8b4513;text-decoration:underline;
+}
+
+header {
+	background-image: url("https://assets.st-note.com/production/uploads/images/9903425/picture_pc_1d6e99e328a64740e7971159948e9cda.jpeg");
+	background-repeat: no-repeat;
+    background-size:cover;                               /* 画像のサイズを指定    */
+    width:100%;                                            /* 横幅のサイズを指定    */
+    height:400px; 
+	text-align: center;
+	padding: 8em;
+	Max-width: 100%;
+}
+
+footer {
+	text-align: center;
+	padding: 2em;
+	background-color: #284a66;
+	color: #fff;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+
+h1 { 
+	color: #fff;
+}
+
+h2 {
+	position: relative;
+	padding: 0.25em 0;
+  }
+  h2:after {
+	content: "";
+	display: block;
+	height: 4px;
+	background: -webkit-linear-gradient(to right, rgb(31, 90, 90), transparent);
+	background: linear-gradient(to right, rgb(31, 90, 90), transparent);
+  }
+
+
+h4 { 
+	color: #fff;
+}
+
+
+
+
+/* 横並び */
+
+.flex {
+    display: flex; /*横並び*/
+  }
+  .flex .image {
+    width: 600px; /*画像サイズ指定*/
+    margin: 0;
+    padding: 0;
+  }
+  .flex .image img {
+    width: 100%;
+    height: auto;
+  }
+  .flex .right {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+  .flex .title {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .flex .text {
+    margin: 10px 0 0;
+    padding: 0;
+  }
+
+
+.ruled-line {
+	 width: 80%;
+	 max-width: 1100px;
+	 margin: 0 auto;
+	 font-size: 15px;
+	 line-height: 2.3;
+	 background-image: linear-gradient(180deg, #795548 1px, transparent 1px);
+	 background-size: 100% 2.3em;
+	 background-position: bottom 1px center;
+	}
+
+#topBanner {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #006400
+	;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#topBanner:hover {
+	background-color: #2f4f4f
+	;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+	color: inherit;
+	text-decoration: none;
+}
+input {
+  display: none;
+}
+.cp_fullscreenmenu {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+}
+/*menuコンテンツ*/
+.cp_fullscreenmenu .menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(to top, rgba(10, 70, 4, 0.8) 0%, rgba(197, 243, 201, 0.651) 100%);
+}
+.cp_fullscreenmenu .menu label {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-size: 100%;
+}
+.cp_fullscreenmenu .menu .menucont {
+	font-size: 54px;
+	position: relative;
+	top: 50%;
+	margin-top: -170px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.cp_fullscreenmenu .menu ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+.cp_fullscreenmenu .menu ul li,
+.cp_fullscreenmenu .menu ul li a {
+	transition: all 0.3s ease;
+}
+.cp_fullscreenmenu .menu ul li a {
+	display: block;
+	padding: 10px 0;
+	color: #ffffff;
+}
+.cp_fullscreenmenu .menu ul li a:hover {
+	color: #006400;
+}
+.cp_fullscreenmenu .menu ul li:hover {
+	background: #ffffff;
+}
+/*クリックしたらメニューが開閉の動作*/
+.cp_fullscreenmenu .menuEffects {
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0.5s;
+	opacity: 0;
+}
+.cp_fullscreenmenu .menuEffects ul {
+	transition: all 0.5s;
+	transform: translateY(0%);
+}
+.cp_fullscreenmenu #menuToggle:checked ~ .menuEffects {
+	visibility: visible;
+	transition: opacity 0.5s;
+	opacity: 1;
+}
+.cp_fullscreenmenu #menuToggle:checked ~ .menuEffects ul {
+	opacity: 1;
+}
+.cp_fullscreenmenu #menuToggle:checked ~ .hamburger .open {
+	background-color: transparent;
+}
+.cp_fullscreenmenu #menuToggle:checked ~ .hamburger .open:before {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	content: '';
+	transform: rotate(45deg);
+	background-color: #ffffff;
+}
+.cp_fullscreenmenu #menuToggle:checked ~ .hamburger .open:after {
+	position: relative;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	content: '';
+	transform: rotate(-45deg);
+	background-color: #ffffff;
+}
+.cp_fullscreenmenu #menuToggle:not(:checked) ~ .menuEffects ul {
+	transform: translateY(-30%);
+}
+/*ハンバーガー*/
+.cp_fullscreenmenu .hamburger {
+	position: relative;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 50px;
+	height: 50px;
+	padding: 15px;
+	cursor: pointer;
+}
+.cp_fullscreenmenu .hamburger:hover .open:before {
+	top: -9px;
+}
+.cp_fullscreenmenu .hamburger:hover .open:after {
+	top: 5px;
+}
+.cp_fullscreenmenu .open,
+.cp_fullscreenmenu .open:before,
+.cp_fullscreenmenu .open:after {
+	position: relative;
+	display: block;
+	width: 24px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #fff;
+	transition: all 0.3s ease;
+}
+.cp_fullscreenmenu .open {
+	top: 8px;
+	cursor: pointer;
+}
+.cp_fullscreenmenu .open:before {
+	top: -8px;
+	content: '';
+	transform: rotate(0deg);
+}
+.cp_fullscreenmenu .open:after {
+	top: 4px;
+	content: '';
+}
