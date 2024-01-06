@@ -267,7 +267,7 @@ input {
 	width: 24px;
 	height: 4px;
 	border-radius: 2px;
-	background-color: #fff;
+	background-color: #000000;
 	transition: all 0.3s ease;
 }
 .cp_fullscreenmenu .open {
